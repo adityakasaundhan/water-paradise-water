@@ -16,11 +16,26 @@ export default function Hero({ onBookClick }: HeroProps) {
   return (
     <section 
       id="home" 
-      className="relative flex flex-col items-center justify-center text-center px-6 pt-32 pb-40 min-h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: `url('https://res.cloudinary.com/dqfggutr5/image/upload/f_auto,q_auto/1000085327_rer9ud')` }}
+      className="relative flex flex-col items-center justify-center text-center px-6 pt-32 pb-40 min-h-screen overflow-hidden z-[1]"
     >
-      {/* Slight dark gradient overlay for text visibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-sky-950/20 z-0" />
+      {/* Background image container with a bottom fade mask to blend seamlessly into Atmosphere */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        style={{ 
+          backgroundImage: `url('https://res.cloudinary.com/dqfggutr5/image/upload/f_auto,q_auto/1000085327_rer9ud')`,
+          maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
+        }}
+      />
+
+      {/* Slight dark gradient overlay for text visibility with matching mask */}
+      <div 
+        className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-sky-950/20 z-0"
+        style={{
+          maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
+        }}
+      />
 
       <div className="relative z-10 flex flex-col items-center justify-center">
         {/* Cinematic Tagline upper label */}
@@ -79,16 +94,6 @@ export default function Hero({ onBookClick }: HeroProps) {
         </div>
       </div>
 
-      {/* Cinematic scroll down hint */}
-      <button 
-        onClick={handleScrollDown}
-        className="absolute bottom-12 flex flex-col items-center gap-2 cursor-pointer text-white/50 hover:text-white/80 transition-all duration-300 group font-sans z-10"
-        aria-label="Scroll to details"
-        id="hero-scroll-btn"
-      >
-        <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">Explore Resort</span>
-        <ArrowDown className="w-4 h-4 animate-bounce group-hover:translate-y-1 transition-transform" />
-      </button>
     </section>
   );
 }

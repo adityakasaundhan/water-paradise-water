@@ -110,7 +110,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   return (
     <div
       id="booking-modal-overlay"
-      className="fixed inset-0 z-50 bg-black/45 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto font-sans"
+      className="fixed inset-0 z-[10050] bg-black/45 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto font-sans"
     >
       <div 
         id="booking-modal-card"

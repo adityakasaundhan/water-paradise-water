@@ -34,7 +34,7 @@ export default function Gallery() {
             <Compass className="w-3.5 h-3.5 animate-spin" /> Cinematic Snapshots
           </span>
           <h2
-            className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-emerald-500 to-[#032b45] tracking-tight font-rustic py-2"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-emerald-500 to-[#032b45] tracking-tight font-rustic py-2"
             style={{ fontFamily: "var(--font-display)" }}
           >
             The Summer Canvas
@@ -114,7 +114,7 @@ export default function Gallery() {
       {lightboxIndex !== null && (
         <div
           onClick={() => setLightboxIndex(null)}
-          className="fixed inset-0 bg-white/95 backdrop-blur-3xl z-50 flex flex-col justify-between p-6 animate-fade-rise text-[#032b45]"
+          className="fixed inset-0 bg-white/95 backdrop-blur-3xl z-[10050] flex flex-col justify-between p-6 animate-fade-rise text-[#032b45]"
           id="gallery-lightbox"
         >
           {/* Header */}

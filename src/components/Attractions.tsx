@@ -28,7 +28,7 @@ export default function Attractions() {
             <Compass className="w-3.5 h-3.5 animate-spin" /> Unrivaled Adventures
           </span>
           <h2 
-            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-[#0284c7] to-[#032b45] tracking-widest font-luxury py-2 uppercase"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-[#0284c7] to-[#032b45] tracking-widest font-luxury py-2 uppercase"
             style={{ fontFamily: "var(--font-luxury)" }}
           >
             The Realm of Splashes
@@ -126,7 +126,7 @@ export default function Attractions() {
 
       {/* Modern specification Lightbox modal */}
       {activeAttraction && (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-xl z-50 flex items-center justify-center p-4 animate-fade-rise" id="spec-lightbox">
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-xl z-[10050] flex items-center justify-center p-4 animate-fade-rise" id="spec-lightbox">
           <div className="liquid-glass border border-[#0284c7]/30 rounded-3xl max-w-lg w-full p-8 relative flex flex-col gap-6 shadow-2xl overflow-hidden bg-white/95">
             {/* Background glass shine decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />

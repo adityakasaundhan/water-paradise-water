@@ -190,7 +190,6 @@ export default function App() {
                 Forge Eternal Tech
               </h5>
               <div className="mt-2 space-y-0.5 text-[11px] text-slate-700 font-semibold font-sans">
-                <p>Founder: <span className="text-emerald-800 font-extrabold">Aditya Kasaundhan</span></p>
                 <p>Contact: <a href="tel:9511421803" className="hover:underline text-[#0284c7] font-bold">9511421803</a></p>
                 <p>Email: <a href="mailto:eternalsforge@gmail.com" className="hover:underline text-[#0284c7] font-bold">eternalsforge@gmail.com</a></p>
                 <p>Location: <span className="text-slate-800 font-extrabold">Fatehpur, India</span></p>

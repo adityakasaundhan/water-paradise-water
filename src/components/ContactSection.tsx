@@ -70,7 +70,7 @@ export default function ContactSection() {
             <HelpCircle className="w-3.5 h-3.5 text-[#0284c7]" /> Frequent Inquiries
           </span>
           <h2
-            className="text-5xl md:text-7xl font-extrabold text-[#032b45] tracking-tight font-rustic py-2 mb-8"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-[#032b45] tracking-tight font-rustic py-2 mb-8"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Curated Answers
@@ -155,7 +155,7 @@ export default function ContactSection() {
               /* Form input fields */
               <form onSubmit={handleFormSubmit} className="space-y-5">
                 <div className="text-left">
-                  <h4 className="text-4xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-emerald-500 to-[#032b45] font-mileast" style={{ fontFamily: "var(--font-mileast)", fontSize: '2.6rem', textTransform: 'none' }}>
+                  <h4 className="text-3xl sm:text-4xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-emerald-500 to-[#032b45] font-mileast" style={{ fontFamily: "var(--font-mileast)", fontSize: '2.4rem', textTransform: 'none' }}>
                     Connect with Our Desk
                   </h4>
                   <p className="text-[11px] text-[#0c4a6e] font-semibold mt-2">Planning a group picnic? Send your details for customized discounts.</p>
