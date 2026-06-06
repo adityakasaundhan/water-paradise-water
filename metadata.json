@@ -1,0 +1,6 @@
+{
+  "name": "Water Paradise Waterpark",
+  "description": "Premium landing website for Fatehpur's premier water resort featuring luxurious pools, thrilling slides, and interactive ticket booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

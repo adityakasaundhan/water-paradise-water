@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@400;600;700;800&family=Pinyon+Script&family=Monsieur+La+Doulaise&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #090a0d;
+  --color-foreground: #f4f6f9;
+  --color-muted-foreground: #a4abb6;
+
+  --color-primary: #d4af37;
+  --color-primary-foreground: #090a0d;
+
+  --color-secondary: #22262f;
+  --color-muted: #14171e;
+  --color-accent: #c5a85c;
+
+  --color-border: #3c4350;
+  --color-input: #1a1d24;
+
+  --font-display: 'Great Vibes', 'Georgia', cursive;
+  --font-sans: 'Outfit', 'Helvetica Neue', sans-serif;
+  --font-luxury: 'Cinzel', serif;
+  --font-mileast: 'Pinyon Script', 'Monsieur La Doulaise', cursive;
+}
+
+:root {
+  font-family: 'Outfit', sans-serif;
+  background-color: #e0f2fe;
+  color: #0f172a;
+}
+
+/* Glass aesthetics themed with Crystal Water and Gold */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Crystal clean white border */
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.25),
+    0 10px 40px -10px rgba(14, 116, 144, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 
+    inset 0 1px 3px rgba(255, 255, 255, 0.3),
+    0 15px 45px -8px rgba(14, 116, 144, 0.25); /* Glow with aqua halo */
+}
+
+/* Luxury Calligraphic Text Accent */
+.font-rustic {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Mileast Calligraphy Accent */
+.font-mileast {
+  font-family: 'Pinyon Script', 'Monsieur La Doulaise', cursive;
+}
+
+/* Luxury Modern Text Accent */
+.font-orange {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Luxury Serif Accent */
+.font-luxury {
+  font-family: 'Cinzel', serif;
+}
+
+/* Motion system animations for Bubbles, Clouds and Water */
+
+/* Water wave dynamic motion animation */
+@keyframes water-surge {
+  0%, 100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.04) rotate(1.5deg);
+  }
+}
+
+/* Underwater caustic sun ray shimmer */
+@keyframes caustic-shimmer {
+  0%, 100% {
+    opacity: 0.15;
+    background-position: 0% 50%;
+  }
+  50% {
+    opacity: 0.45;
+    background-position: 100% 50%;
+  }
+}
+
+/* Drifting clouds styling */
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-100%) translateY(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(100vw) translateY(-20px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* Gently floating bubbles rising and swaying in water */
+@keyframes bubble-rise {
+  0% {
+    transform: translateY(115vh) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-15vh) translateX(55px) scale(1.35);
+    opacity: 0;
+  }
+}
+
+/* Breathing Sky color gradient animation */
+@keyframes sky-breath {
+  0%, 100% {
+    background-color: #bae6fd;
+    background-position: 0% 50%;
+  }
+  50% {
+    background-color: #38bdf8;
+    background-position: 100% 50%;
+  }
+}
+
+.animate-sky-breath {
+  background-size: 200% 200%;
+  animation: sky-breath 16s ease infinite;
+}
+
+.animate-water-surge {
+  animation: water-surge 10s ease-in-out infinite;
+}
+
+.animate-caustic-shimmer {
+  animation: caustic-shimmer 12s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.cloud-layered-1 {
+  animation: cloud-drift 80s linear infinite;
+  filter: blur(40px);
+}
+
+.cloud-layered-2 {
+  animation: cloud-drift 130s linear infinite;
+  animation-delay: -35s;
+  filter: blur(60px);
+}
+
+.cloud-layered-3 {
+  animation: cloud-drift 190s linear infinite;
+  animation-delay: -90s;
+  filter: blur(80px);
+}
+
+.bubble-glow {
+  animation: bubble-rise var(--speed) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-rise {
+  animation: fade-rise 0.8s ease-out both;
+}
+
+.animate-fade-rise-delay {
+  animation: fade-rise 0.8s ease-out 0.2s both;
+}
+
+.animate-fade-rise-delay-2 {
+  animation: fade-rise 0.8s ease-out 0.4s both;
+}
+
+/* Beautiful custom silver scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bae6fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
