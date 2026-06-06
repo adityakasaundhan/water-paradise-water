@@ -28,8 +28,8 @@ export default function Attractions() {
             <Compass className="w-3.5 h-3.5 animate-spin" /> Unrivaled Adventures
           </span>
           <h2 
-            className="text-5xl md:text-7xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-[#0284c7] to-[#032b45] tracking-tight font-rustic py-2"
-            style={{ fontFamily: "var(--font-display)" }}
+            className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-[#0284c7] to-[#032b45] tracking-widest font-luxury py-2 uppercase"
+            style={{ fontFamily: "var(--font-luxury)" }}
           >
             The Realm of Splashes
           </h2>
@@ -68,7 +68,7 @@ export default function Attractions() {
               <div className="p-6 flex-grow flex flex-col justify-between font-orange">
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-3">
-                    <h3 className="text-2xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#032b45] via-[#0284c7] to-[#032b45] font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '1.9rem' }}>
+                    <h3 className="text-3xl font-semibold text-[#032b45] font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '2.1rem', lineHeight: '1.2' }}>
                       {att.name}
                     </h3>
                     {att.intensityLevel && (
@@ -147,7 +147,7 @@ export default function Attractions() {
                   </button>
                 </div>
 
-                <h3 className="text-3xl text-[#032b45] font-normal mt-1 leading-[1.1] font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '2.5rem' }}>
+                <h3 className="text-4xl text-[#032b45] font-semibold mt-1 leading-[1.2] font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '2.6rem' }}>
                   {activeAttraction.name}
                 </h3>
 

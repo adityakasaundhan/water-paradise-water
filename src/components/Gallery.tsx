@@ -90,7 +90,7 @@ export default function Gallery() {
               </div>
 
               <div>
-                <h4 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-white to-lime-300 font-normal font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '1.9rem' }}>
+                <h4 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#fffbeb] via-[#fef250] to-[#facc15] font-normal font-rustic" style={{ fontFamily: "var(--font-display)", fontSize: '1.9rem' }}>
                   {item.title}
                 </h4>
                 <p className="text-[11px] text-sky-100/90 mt-1 leading-relaxed font-semibold">

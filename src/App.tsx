@@ -169,14 +169,32 @@ export default function App() {
             </div>
           </div>
 
-          <div className="max-w-7xl mx-auto border-t border-[#0284c7]/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-[#0c4a6e] font-mono font-bold text-left">
-            <p>© {new Date().getFullYear()} Water Paradise Waterpark, Fatehpur. All rights reserved.</p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-[#032b45] transition-colors">Security Rules</a>
-              <span>•</span>
-              <a href="#" className="hover:text-[#032b45] transition-colors">Nylon Code of Hygiene</a>
-              <span>•</span>
-              <a href="#" className="hover:text-[#032b45] transition-colors">Terms of Ticketing</a>
+          <div className="max-w-7xl mx-auto border-t border-[#0284c7]/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 text-[11px] text-[#0c4a6e] font-sans text-left">
+            <div className="space-y-2">
+              <p className="font-mono font-bold">© {new Date().getFullYear()} Water Paradise Waterpark, Fatehpur. All rights reserved.</p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 font-mono font-bold text-[#0c4a6e]/85">
+                <a href="#" className="hover:text-[#032b45] transition-colors">Security Rules</a>
+                <span>•</span>
+                <a href="#" className="hover:text-[#032b45] transition-colors">Nylon Code of Hygiene</a>
+                <span>•</span>
+                <a href="#" className="hover:text-[#032b45] transition-colors">Terms of Ticketing</a>
+              </div>
+            </div>
+
+            {/* Premium Forge Eternal Tech Creator Badge */}
+            <div className="liquid-glass border border-[#0284c7]/15 bg-gradient-to-br from-emerald-50/70 to-blue-50/70 p-4 rounded-2xl max-w-sm w-full md:w-80 shadow-md">
+              <span className="block text-[8px] uppercase tracking-[0.25em] text-[#0284c7] font-extrabold mb-1 font-mono">
+                Website Developed & Formed By
+              </span>
+              <h5 className="text-sm font-black text-[#032b45] tracking-tight font-sans">
+                Forge Eternal Tech
+              </h5>
+              <div className="mt-2 space-y-0.5 text-[11px] text-slate-700 font-semibold font-sans">
+                <p>Founder: <span className="text-emerald-800 font-extrabold">Aditya Kasaundhan</span></p>
+                <p>Contact: <a href="tel:9511421803" className="hover:underline text-[#0284c7] font-bold">9511421803</a></p>
+                <p>Email: <a href="mailto:eternalsforge@gmail.com" className="hover:underline text-[#0284c7] font-bold">eternalsforge@gmail.com</a></p>
+                <p>Location: <span className="text-slate-800 font-extrabold">Fatehpur, India</span></p>
+              </div>
             </div>
           </div>
         </footer>

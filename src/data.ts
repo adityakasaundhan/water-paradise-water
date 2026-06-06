@@ -24,7 +24,7 @@ export const BACKGROUND_VIDEOS = [
 export const ATTRACTIONS: Attraction[] = [
   {
     id: 'turbo-cascade',
-    name: 'The Turbo Cascade Slide',
+    name: 'Turbo Cascade Slide',
     description: 'Fatehpur\'s highest and fastest thrill slide. Plunge through multiple corkscrew coils and finish with an epic, breathtaking splash pool touchdown.',
     category: 'slides',
     imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop',
