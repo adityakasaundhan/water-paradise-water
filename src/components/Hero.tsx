@@ -1,11 +1,7 @@
 import React from 'react';
-import { CalendarRange, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
-interface HeroProps {
-  onBookClick: () => void;
-}
-
-export default function Hero({ onBookClick }: HeroProps) {
+export default function Hero() {
   const handleScrollDown = () => {
     const infoSec = document.getElementById('info-strip');
     if (infoSec) {
@@ -78,15 +74,6 @@ export default function Hero({ onBookClick }: HeroProps) {
 
         {/* Required Hero CTA */}
         <div className="animate-fade-rise-delay-2 mt-12 flex flex-col items-center gap-4">
-          <button
-            onClick={onBookClick}
-            id="hero-cta-button"
-            className="liquid-glass rounded-full px-14 py-5 text-sm text-yellow-300 hover:text-yellow-200 border-2 border-yellow-400/30 hover:border-yellow-400/60 hover:bg-white/10 font-extrabold uppercase tracking-widest hover:scale-[1.03] active:scale-95 transition-all duration-300 cursor-pointer shadow-xl flex items-center gap-3 font-orange bg-white/5"
-          >
-            <CalendarRange className="w-5 h-5 text-yellow-300 animate-pulse" />
-            Book Your Day Pass
-          </button>
-
           {/* Small subtle review note */}
           <span className="text-xs text-sky-200 font-semibold mt-1 pb-1 font-orange tracking-wider uppercase drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">
             Entry Pass starting at just <span className="text-yellow-300 font-black">₹350</span>

@@ -5,13 +5,11 @@ import InfoStrip from './components/InfoStrip';
 import Attractions from './components/Attractions';
 import Gallery from './components/Gallery';
 import ContactSection from './components/ContactSection';
-import BookingModal from './components/BookingModal';
 import Atmosphere from './components/Atmosphere';
 import { BACKGROUND_VIDEOS } from './data';
 import { Play, Pause, Film, VolumeX, Volume2, ShieldCheck, ChevronUp } from 'lucide-react';
 
 export default function App() {
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [activeVideoIdx, setActiveVideoIdx] = useState(0);
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -102,12 +100,11 @@ export default function App() {
         
         {/* Navigation Bar */}
         <Navbar 
-          onBookClick={() => setIsBookingOpen(true)} 
           activeSection={activeSection} 
         />
 
         {/* Hero Section */}
-        <Hero onBookClick={() => setIsBookingOpen(true)} />
+        <Hero />
 
         {/* Quick Information Strip details */}
         <InfoStrip />
@@ -146,7 +143,6 @@ export default function App() {
                 <li><a href="#home" className="text-[#0c4a6e] hover:text-[#032b45] transition-colors">Hero Entry</a></li>
                 <li><a href="#attractions" className="text-[#0c4a6e] hover:text-[#032b45] transition-colors">Splash Attractions</a></li>
                 <li><a href="#gallery" className="text-[#0c4a6e] hover:text-[#032b45] transition-colors">Resort Gallery</a></li>
-                <li><a href="#info-strip" className="text-[#0c4a6e] hover:text-[#032b45] transition-colors">Pass Bookings</a></li>
                 <li><a href="#contact" className="text-[#0c4a6e] hover:text-[#032b45] transition-colors">Helpline & Queries</a></li>
               </ul>
             </div>
@@ -202,14 +198,6 @@ export default function App() {
         </footer>
 
       </div>
-
-
-
-      {/* Persistent Day Pass Booking and Coupon Generation Modal */}
-      <BookingModal 
-        isOpen={isBookingOpen} 
-        onClose={() => setIsBookingOpen(false)} 
-      />
 
     </div>
   );

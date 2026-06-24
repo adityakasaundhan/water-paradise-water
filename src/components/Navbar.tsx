@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Waves } from 'lucide-react';
 
 interface NavbarProps {
-  onBookClick: () => void;
   activeSection: string;
 }
 
-export default function Navbar({ onBookClick, activeSection }: NavbarProps) {
+export default function Navbar({ activeSection }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -110,14 +109,6 @@ export default function Navbar({ onBookClick, activeSection }: NavbarProps) {
 
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4 font-orange relative z-[10002]">
-          <button
-            onClick={onBookClick}
-            id="nav-book-button"
-            className="liquid-glass rounded-full px-4 sm:px-6 py-2 sm:py-2.5 text-[10px] sm:text-xs text-white border border-[#fef250]/40 bg-[#fef250]/15 hover:scale-[1.03] hover:bg-[#fef250]/30 transition-all duration-300 cursor-pointer shadow-md inline-block active:scale-95 uppercase tracking-wider font-extrabold"
-          >
-            Book Tickets
-          </button>
-
           {/* Hamburger Menu Icon */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
