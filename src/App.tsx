@@ -184,15 +184,18 @@ export default function App() {
             {/* Premium Forge Eternal Tech Creator Badge */}
             <div className="liquid-glass border border-[#0284c7]/15 bg-gradient-to-br from-emerald-50/70 to-blue-50/70 p-4 rounded-2xl max-w-sm w-full md:w-80 shadow-md">
               <span className="block text-[8px] uppercase tracking-[0.25em] text-[#0284c7] font-extrabold mb-1 font-mono">
-                Website Developed & Formed By
+                Website Created By
               </span>
-              <h5 className="text-sm font-black text-[#032b45] tracking-tight font-sans">
+              <h5 className="text-sm font-black text-[#032b45] tracking-tight font-sans uppercase">
                 Forge Eternal Tech
               </h5>
               <div className="mt-2 space-y-0.5 text-[11px] text-slate-700 font-semibold font-sans">
-                <p>Contact: <a href="tel:9511421803" className="hover:underline text-[#0284c7] font-bold">9511421803</a></p>
-                <p>Email: <a href="mailto:eternalsforge@gmail.com" className="hover:underline text-[#0284c7] font-bold">eternalsforge@gmail.com</a></p>
-                <p>Location: <span className="text-slate-800 font-extrabold">Fatehpur, India</span></p>
+                <p>Location: <span className="text-slate-800 font-extrabold">Fatehpur-UP- India</span></p>
+                <p>Email ID: <a href="mailto:eternalsforge@gmail.com" className="hover:underline text-[#0284c7] font-bold">eternalsforge@gmail.com</a></p>
+                <div className="pt-2 mt-2 border-t border-[#0284c7]/10">
+                  <p className="font-extrabold text-[#032b45]">ADITYA KASAUNDHAN</p>
+                  <p><a href="https://wa.me/919511421803" target="_blank" rel="noopener noreferrer" className="hover:underline text-emerald-600 font-extrabold">+91 9511421803</a></p>
+                </div>
               </div>
             </div>
           </div>
